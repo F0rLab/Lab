@@ -57,3 +57,27 @@ ul li {
 .contact, .education, .skills, .languages {
   margin-bottom: 20px;
 }
+.accordion {
+  cursor: pointer;
+  background-color: #eee;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  color: black;
+}
