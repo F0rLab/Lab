@@ -1,72 +1,60 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-  <meta charset="UTF-8">
-  <title>Ad Zamanov - CV</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Mail Zamanov - CV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="left-side">
-      <img src="profile.jpg" alt="Profil Şəkli" class="profile-pic">
-
-      <div class="contact">
-        <h2>Əlaqə</h2>
-        <p>📞 +994 77 777 77 77</p>
-        <p>📧 mail@mail.com</p>
-        <p>📍 Bakı, Azərbaycan</p>
-        <p>🌐 <a href="https://www.google.com" target="_blank">www.google.com</a></p>
-      </div>
-
-      <h2 class="accordion">Təhsil</h2>
-      <div class="panel">
-        <p><strong>2020 - 2024</strong><br>HARVARD UNIVERSITY<br>Kiber Təhlükəsizlik</p>
-        <p><strong>2024 - 2028</strong><br>AzTU<br>Kiber Təhlükəsizlik</p>
-      </div>
-
-      <h2 class="accordion">Bacarıqlar</h2>
-      <div class="panel">
-        <ul>
-          <li>Linuxla işləmə</li>
-          <li>Windowsla işləmə</li>
-          <li>Proqramlaşdırma</li>
-          <li>Məsuliyyət</li>
-        </ul>
-      </div>
-
-      <h2 class="accordion">Dillər</h2>
-      <div class="panel">
-        <ul>
-          <li>İngilis</li>
-          <li>Alman</li>
-          <li>Kenya</li>
-        </ul>
-      </div>
+    <div class="container">
+        <div class="left-side">
+            <img src="profile.jpg" alt="Profil Sekli" class="profile-pic">
+            <div class="contact">
+                <h2>Elaqe <button class="edit-btn" onclick="elaqeniDeyis()">Deyis</button></h2>
+                <div id="elaqeMelumatlari">
+                </div>
+            </div>
+            
+            <h2 class="accordion">Tehsil <button class="edit-btn" onclick="tehsiliDeyis()">Deyis</button></h2>
+            <div class="panel">
+                <div id="tehsilMelumatlari">
+                </div>
+                <button class="add-btn" onclick="yeniTehsilElaveEt()">Yeni Tehsil Elave Et</button>
+            </div>
+            
+            <h2 class="accordion">Bacariqlar <button class="edit-btn" onclick="bacariqlariDeyis()">Deyis</button></h2>
+            <div class="panel">
+                <ul id="bacariqlarSiyahisi">
+                </ul>
+                <button class="add-btn" onclick="yeniBaracariqElaveEt()">Yeni Bacariq Elave Et</button>
+            </div>
+            
+            <h2 class="accordion">Diller <button class="edit-btn" onclick="dilleriDeyis()">Deyis</button></h2>
+            <div class="panel">
+                <ul id="dillerSiyahisi">
+                </ul>
+                <button class="add-btn" onclick="yeniDilElaveEt()">Yeni Dil Elave Et</button>
+            </div>
+        </div>
+        
+        <div class="right-side">
+            <h1 id="tamAd">Ad <span>Zamanov</span> <button class="edit-btn" onclick="adiDeyis()">Deyis</button></h1>
+            <h3 id="isBasligi">Kibertehlukezlik Mutexessisi <button class="edit-btn" onclick="isBasliginiDeyis()">Deyis</button></h3>
+            
+            <div class="profile">
+                <h2>Profil <button class="edit-btn" onclick="profiliDeyis()">Deyis</button></h2>
+                <p id="profilMetni">Cox yaxsi telebeyem</p>
+            </div>
+            
+            <h2 class="accordion">Is Tecrubesi <button class="edit-btn" onclick="isTecrubesiDeyis()">Deyis</button></h2>
+            <div class="panel">
+                <div id="isTecrubesi">
+                </div>
+                <button class="add-btn" onclick="yeniIsElaveEt()">Yeni Is Elave Et</button>
+            </div>
+        </div>
     </div>
 
-    <div class="right-side">
-      <h1>Ad <span>Zamanov</span></h1>
-      <h3>Kibertəhlükəsizlik Mütəxəssisi</h3>
-
-      <div class="profile">
-        <h2>Profil</h2>
-        <p>Çox yaxşı tələbəyəm</p>
-      </div>
-
-      <h2 class="accordion">İş Təcrübəsi</h2>
-      <div class="panel">
-        <h3>Dövlət Təhlükəsizlik Xidməti <span>2024 - Hal-hazırda</span></h3>
-        <ul>
-          <li>Komandanı idarə etmək və yönləndirmək</li>
-        </ul>
-        <h3>AzTU <span>2023 - 2024</span></h3>
-        <ul>
-          <li>Texniki dəstək</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
